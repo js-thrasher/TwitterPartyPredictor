@@ -9,6 +9,8 @@ I used a csv of politicians, their party, and their twitter ID to make requests 
 
 https://imgur.com/a/jCJMGHi
 
+https://imgur.com/a/NchMJRC
+
 # Methods
 After cleaning and vectorizing the data, I split it into 5 sets for 5-fold validation and trained a Gaussian Naive Bayes classifier. 
 
