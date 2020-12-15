@@ -12,6 +12,10 @@ https://imgur.com/a/jCJMGHi
 https://imgur.com/a/NchMJRC
 
 # Methods
+I wanted to use ngrams (bi- and tri- grams, specifically) since there are so many that can be strong predictors of partisanship ('keep america great' being republican, and 'medicare for all' being democratic, for instance). However, I ran into some issues with computing time with such a large dataset and so I used tf-idf instead. Practically speaking for this dataset, the tf-idf vectorizer worked almost as poorly as a 1-gram (count) vectorizer.
+
+I also cleaned the data to remove punctuation, stopwords, etc
+
 After cleaning and vectorizing the data, I split it into 5 sets for 5-fold validation and trained a Gaussian Naive Bayes classifier. 
 
 # Results
