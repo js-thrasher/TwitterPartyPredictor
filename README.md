@@ -26,4 +26,6 @@ https://imgur.com/a/bZozxXK
 1st is from Trump, 2nd and 3rd are from Biden. So the first two were predicted correctly but the third was not, and in general I did find that the model overpredicted for Republican. This could possibly be due to overfitting or bias in the dataset
 
 # Discussion
-Ultimately, this could have also been better with more feature engineering. Things like Flesch-Kincaid reading level, % of punctuation, and geolocation/time of tweet could be valuable features. I also ran into some trouble trying to generate n-grams with such a large dataset. 
+Ultimately, this could have also been better with more feature engineering. Things like Flesch-Kincaid reading level, % of punctuation, and geolocation/time of tweet could be valuable features. I also ran into some trouble trying to generate n-grams with such a large dataset.
+
+Other TODOs include deploying to a browser and setting up an automated pipeline.
