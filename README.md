@@ -21,7 +21,9 @@ After cleaning and vectorizing the data, I split it into 5 sets for 5-fold valid
 # Results
 Overall, the max test score I got was about 0.76. I was able to test a few unseen pieces of data and they were mostly correct.
 
-https://imgur.com/a/ouEZd8U
+https://imgur.com/a/bZozxXK
+
+1st is from Trump, 2nd and 3rd are from Biden. So the first two were predicted correctly but the third was not, and in general I did find that the model overpredicted for Republican. This could possibly be due to overfitting or bias in the dataset
 
 # Discussion
 Ultimately, this could have also been better with more feature engineering. Things like Flesch-Kincaid reading level, % of punctuation, and geolocation/time of tweet could be valuable features. I also ran into some trouble trying to generate n-grams with such a large dataset. 
