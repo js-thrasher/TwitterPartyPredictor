@@ -5,7 +5,7 @@ Classifies partisan lean from text data
 I decided to undergo this project after seeing how accurate a model could be at predicting tweets related to COVID (https://news.osu.edu/twitter-posts-reveal-polarization-in-congress-on-covid-19/). I wanted to see if there were more general trends in partisan lean that could be exposed through text data. Additionally, I wanted to use a real-world API instead of a toy data set, so I thought getting data from the twitter API would be a good learning experience.
 
 # Selection of Data
-I used a csv of politicians, their party, and their twitter ID to make requests via the twitter API. From there, I gathered the raw text data, created a DF from it, and cleaned the text data. For features, I vectorized this data into a tf-idf (term frequency-inverse documnet frequency) vector.
+I used a csv of politicians, their party, and their twitter ID to make requests via the twitter API. From there, I gathered the raw text data, created a DF from it, and cleaned the text data. For features, I vectorized this data into a tf-idf (term frequency-inverse document frequency) vector.
 
 https://imgur.com/a/jCJMGHi
 
@@ -23,7 +23,7 @@ Overall, the max test score I got was about 0.76. I was able to test a few unsee
 
 https://imgur.com/a/bZozxXK
 
-1st is from Trump, 2nd and 3rd are from Biden. So the first two were predicted correctly but the third was not, and in general I did find that the model overpredicted for Republican. This could possibly be due to overfitting or bias in the dataset
+1st is from Trump, 2nd and 3rd are from Biden. So the first two were predicted correctly but the third was not. In general I did find that the model overpredicted for Republican, possibly due to overfitting or bias in the dataset
 
 # Discussion
 Ultimately, this could have also been better with more feature engineering. Things like Flesch-Kincaid reading level, % of punctuation, and geolocation/time of tweet could be valuable features. I also ran into some trouble trying to generate n-grams with such a large dataset.
